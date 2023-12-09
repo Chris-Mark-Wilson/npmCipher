@@ -1,0 +1,14 @@
+{
+    "name": "silly-cipher",
+    "version": "1.0.0",
+    "description": "encoder-decoder",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Chris-Mark-Wilson",
+    "license": "ISC",
+    "bin": {
+        "silly-cipher": "index.js"
+    }
+}
