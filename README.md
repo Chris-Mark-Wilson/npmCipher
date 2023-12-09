@@ -7,11 +7,15 @@ Written by Chris Wilson
 
 new cli usage -
 ``````
-cipher <path/to/dictionary> <inputfile[.txt.enc]> <key[number]>
+silly-cipher <path/to/dictionary> <inputfile[.txt.enc]> <key[number]>
 
-e.g cipher charChar.txt example.txt 50
+e.g $ silly-cipher charChar.txt example.txt 50
 
 will encode example.txt outputting example.txt.enc using the dictionary from charChar.txt and an offset of 50
+
+$ silly-cipher charChar.txt example.txt.enc 50 will decode the coded file and output example.txt
+
+the key must be a positive integer
 
 ``````
 - The program will auto-detect if the given dictionary substitutes all numeric or alphanumeric
@@ -30,4 +34,4 @@ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@£$%^&*()-_=+[]{};:'"\|,.<
 
 - all substitutions must be unique
 
-example encoding .txt files are included ``````/src/data/charChar.txt`````` and ``````/src/data/charNum.txt``````
+example encoding .txt files can be found here [charChar.txt](https://gist.github.com/Chris-Mark-Wilson/e065bcb072c38a2105c8c38859253667) and here [charNum.txt](https://gist.github.com/Chris-Mark-Wilson/fb140f2312119b1aa59b9a29a4240536)
